@@ -36,12 +36,11 @@ import math
 
 
 print("Enter in the coefficients for a quadratic equation in the format:")
-print("  ax^2 + bx + c = 0")
 
 while True:
-    a= input("please Input a: ")
-    b= input("please Input b: ")
-    c= input("please Input c: ")
+    a= input(" Input a: ")
+    b= input(" Input b: ")
+    c= input(" Input c: ")
 
     try:
         a=int(a)
@@ -54,8 +53,8 @@ while True:
 
     except:
           if int(b)**2-4*int(a)*int(c) <0:
-            print("no real roots!!!!!!!!")
+            print("no real roots ):")
 
           
           else: 
-            print("uh oh!")
+            print("no good!")
