@@ -1,3 +1,4 @@
+
 #python3
 # Quadratic Equation
 # Have the user enter in the coefficients of a quadratic equation in the
@@ -31,7 +32,30 @@ The roots are -4.0 and -4.0
 """
 import os
 os.system('cls')
+import math
 
 
 print("Enter in the coefficients for a quadratic equation in the format:")
 print("  ax^2 + bx + c = 0")
+
+while True:
+    a= input("please Input a: ")
+    b= input("please Input b: ")
+    c= input("please Input c: ")
+
+    try:
+        a=int(a)
+        b=int(b)
+        c=int(c)
+
+        z1 = round(((-b + math.sqrt(b**2 - 4*a*c)))/2*a,2)
+        z2 = round(((-b - math.sqrt(b**2 - 4*a*c)))/2*a,2)
+        print(f'the zeros of your equation are {z1} and {z2}')
+
+    except:
+          if int(b)**2-4*int(a)*int(c) <0:
+            print("no real roots!!!!!!!!")
+
+          
+          else: 
+            print("uh oh!")

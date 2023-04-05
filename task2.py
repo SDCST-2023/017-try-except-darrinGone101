@@ -1,3 +1,4 @@
+
 #!python3
 
 # Reciprocal
@@ -15,3 +16,14 @@ The reciprocal of 3 is 0.3333333333333333
 The reciprocal of 4 is 0.25
 """
 numbers = [0,1,2,3,4]
+a = 0
+
+while True:
+    try: 
+        for i in numbers: 
+            a = 1/i 
+            print(f"the reciprocal of {i} is {a}")
+        break
+    except: 
+        print(f"the reciprocal of {i} does not exist")
+        numbers.remove(i)
